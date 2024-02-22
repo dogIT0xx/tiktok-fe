@@ -1,4 +1,5 @@
 import { Header, LeftNav, Main } from './components'
+import './fontawasome'
 
 export default function App() {
 	return (

@@ -1,6 +1,7 @@
 import Search from './Search'
 import Button from './Button'
 import { images } from '../../assets'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Header() {
 	return (
@@ -18,13 +19,16 @@ export default function Header() {
 						boderColor: '#1618231f',
 						marginRight: '20px',
 					}}
-					leftIcon={<i class='fa-solid fa-plus '></i>}
+					leftIcon={<FontAwesomeIcon icon='fa-solid fa-plus' />}
 				>
 					Upload
 				</Button>
 				<Button style={{ background: '#fe2c55', color: '#ffffff' }}>
 					Log in
 				</Button>
+				<button className='size-10 p-2 ml-3'>
+					<FontAwesomeIcon icon='fa-solid fa-ellipsis-vertical' />
+				</button>
 			</div>
 		</header>
 	)
